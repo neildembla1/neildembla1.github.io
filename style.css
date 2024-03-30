@@ -2,6 +2,29 @@
 	display: block;
 } */
 
+/* nav {
+	height: 10vh;
+} */
+
+@media screen and (max-width: 992px) {
+	.navbar-toggler {
+		zoom: 200%;
+	}
+	nav {
+		height: 6.5vh;
+    }
+	.navbar-toggler {
+		outline: none !important;
+		border: none;
+	}
+	#home-big-image {
+		height: 40vh !important;
+	}
+	#home-image-400 {
+		display: none;
+	}
+}
+
 @media all and (min-width: 992px) {
 	.navbar .dropdown-menu-end {
 		right: 0;
@@ -40,5 +63,21 @@
 
 	/* .navbar * .nav-item:hover {
 		background-color: lightblue !important;
+		
+		
 	} */
+
+	#home-big-image {
+		display: none;
+	}
+
+}
+
+.prevent-select, .prevent-select * {
+	-webkit-user-select: none;
+		/* Safari */
+	-ms-user-select: none;
+		/* IE 10 and IE 11 */
+	user-select: none;
+		/* Standard syntax */
 }

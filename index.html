@@ -17,80 +17,21 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg sticky-top bg-primary">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<img src="assets/IAPA_Logo_Transparent.png" alt="IAPA Logo" height="100">
-				<!-- <span class="h4">SOUTH CAROLINA - INDO AMERICAN PSYCHIATRIC ASSOCIATION</span> -->
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-4">
-					<li class="nav-item bg-primary p-3 active">
-						<a class="nav-link active text-white" aria-current="page" href="index.html">HOME</a>
-					</li>
-					<li class="nav-item bg-primary dropdown p-3">
-						<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						ABOUT US
-					</a>
-					<ul class="dropdown-menu fade-up">
-						<li><a class="dropdown-item p-3" href="#">HISTORY</a></li>
-						<li><a class="dropdown-item p-3" href="#">MISSION &amp; GOALS</a></li> <!-- &amp; = & -->
-						<li><a class="dropdown-item p-3" href="#">GOVERNANCE</a></li>
-						<!-- <li><hr class="dropdown-divider"></li> -->
-					</ul>
-				</li>
-				<li class="nav-item bg-primary dropdown p-3">
-					<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-					aria-expanded="false">
-					RESOURCES
-				</a>
-				<ul class="dropdown-menu fade-up">
-					<li><a class="dropdown-item p-3" href="#">FIND A PSYCHIATRIST</a></li>
-					<li><a class="dropdown-item p-3" href="#">#2</a></li> <!-- &amp; = & -->
-					<li><a class="dropdown-item p-3" href="#">#3</a></li>
-					<!-- <li><hr class="dropdown-divider"></li> -->
-				</ul>
-				<li class="nav-item bg-primary p-3 active">
-					<a class="nav-link active text-white" aria-current="page" href="gallery.html">GALLERY</a>
-				</li>
-				<li class="nav-item bg-primary p-3 active">
-					<a class="nav-link active text-white" aria-current="page" href="events.html">EVENTS</a>
-				</li>
-				<li class="nav-item bg-primary p-3 active">
-					<a class="nav-link active text-white" aria-current="page" href="contact.html">CONTACT US</a>
-				</li>
-				<li class="nav-item bg-primary p-3 active">
-					<a class="nav-link active text-white" aria-current="page" href="donate.html">DONATE</a>
-				</li>
-			</li>
-				</ul>
-				<!-- <form class="d-flex" role="search">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
-			</form> -->
-			</div>
-		</div>
-	</nav>
+	<script id="replace_with_navbar" src="nav.js"></script>
 
 	<main>
-		<h1 class="display-3 ms-6 me-6 mb-5 pt-5 ps-5 pe-5 fw-bold text-center">SOUTH CAROLINA - INDO AMERICAN PSYCHIATRIC ASSOCIATION</h1>
+		<h1 class="display-3 ms-6 me-6 mb-5 pt-5 ps-5 pe-5 fw-bold text-center">SOUTH CAROLINA <br/> INDO AMERICAN PSYCHIATRIC ASSOCIATION</h1>
 
-		<div class="bg-image mb-5 mt-0 ms-0 me-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080'); background-position: center; background-size: cover; height: 100vh;">
+		<div class="bg-image mb-5 mt-0 ms-0 me-0" id="home-big-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('assets/IAPA_Logo.jpg'); background-position: center; background-size: cover; height: 70vh;">
 		</div>
 
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="">
+				<div class="col-lg-6 col-sm-12" id="home-image-400">
+					<img src="assets/IAPA_Logo.jpg" width="500px" class="img-fluid" alt="">
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-sm-12">
 					<h1 class="display-3">Welcome to Psych Association</h1>
 					<p class="lead">We are a psychiatric association committed to providing high-quality mental healthcare services to the community.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
