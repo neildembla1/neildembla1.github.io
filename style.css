@@ -16,9 +16,9 @@
 		margin-top: 0;
 	}
 
-	.navbar .nav-item:hover .nav-link {
+	/* .navbar .nav-item:hover .nav-link {
 		color: #c9c9c9;
-	}
+	} */
 
 	.navbar .dropdown-menu.fade-down {
 		top: 80%;
@@ -37,4 +37,8 @@
 		top: 100%;
 		transform: rotateX(0deg);
 	}
+
+	/* .navbar * .nav-item:hover {
+		background-color: lightblue !important;
+	} */
 }
