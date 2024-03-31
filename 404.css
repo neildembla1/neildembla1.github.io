@@ -1,0 +1,22 @@
+/* Small screens */
+@media all and (max-width: 992px) {
+	.display-1 {
+		font-size: 10rem !important;
+		margin-top: 6vh !important;
+	}
+	.h3 {
+		font-size: 3rem !important;
+		margin-top: 5vh !important;
+	}
+	.img-fluid {
+		width: 70vw !important;
+		margin-top: 2vh !important;
+	}
+}
+
+/* Big screens */
+@media all and (min-width: 992px) {
+	.img-fluid {
+		height: 30vh !important;
+	}
+}

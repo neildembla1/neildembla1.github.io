@@ -13,3 +13,7 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 # Here we actually show the page that has the .html extension
 
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Reroute any 404 messages to a custom page
+
+ErrorDocument 404 /404.html
