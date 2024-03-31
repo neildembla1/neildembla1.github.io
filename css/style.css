@@ -93,12 +93,6 @@ body {
 	color: lightgray !important;
 }
 
-button:hover {
-	outline: none !important;
-	box-shadow: none !important;
-	background-image: linear-gradient(rgba(0, 0, 100, 0.3), rgba(0, 0, 100, 0.3));
-}
-
 .prevent-select, .prevent-select * {
 	-webkit-user-select: none;
 		/* Safari */
