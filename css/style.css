@@ -14,10 +14,7 @@ body {
 	background-color: white !important;
 }
 
-@media screen and (max-width: 992px) {
-	.navbar-toggler {
-		zoom: 100%;
-	}
+@media all and (max-width: 992px) {
 	nav {
 		height: 6.5vh;
     }
@@ -78,12 +75,6 @@ body {
 		transform: rotateX(0deg);
 	}
 
-	/* .navbar * .nav-item:hover {
-		background-color: lightblue !important;
-		
-		
-	} */
-
 	#home-big-image {
 		display: none;
 	}
@@ -91,6 +82,21 @@ body {
 	.navbar-brand {
 		color: #0d6efd !important;
 	}
+}
+
+.navbar .nav-item .nav-link {
+	height: 100%;
+}
+
+.navbar .nav-item .nav-link:hover {
+	cursor: pointer !important;
+	color: lightgray !important;
+}
+
+button:hover {
+	outline: none !important;
+	box-shadow: none !important;
+	background-image: linear-gradient(rgba(0, 0, 100, 0.3), rgba(0, 0, 100, 0.3));
 }
 
 .prevent-select, .prevent-select * {
