@@ -12,6 +12,7 @@
 	outline: none;
 	box-shadow: none;
 	border: 0;
+	position: relative;
 }
 
 .navbar-toggler span {
@@ -36,36 +37,42 @@
 	margin-top: 0px;
 }
 
+
 /* when navigation is clicked */
 
 .navbar-toggler .top-bar {
-	margin-top: 0px;
+	top: inherit;
 	transform: rotate(135deg);
 }
 
 .navbar-toggler .middle-bar {
 	opacity: 0;
+	top: inherit;
 	filter: alpha(opacity=0);
 }
 
 .navbar-toggler .bottom-bar {
-	margin-top: 0px;
+	top: inherit;
 	transform: rotate(-135deg);
 }
 
 /* State when the navbar is collapsed */
 
 .navbar-toggler.collapsed .top-bar {
-	margin-top: -20px;
+	position: absolute;
+	top: 0px;
 	transform: rotate(0deg);
 }
 
 .navbar-toggler.collapsed .middle-bar {
 	opacity: 1;
+	position: absolute;
+	top: 10px;
 	filter: alpha(opacity=100);
 }
 
 .navbar-toggler.collapsed .bottom-bar {
-	margin-top: 20px;
+	position: absolute;
+	top: 20px;
 	transform: rotate(0deg);
 }
