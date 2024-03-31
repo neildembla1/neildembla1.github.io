@@ -31,6 +31,15 @@ body {
 	#home-image-400 {
 		display: none;
 	}
+	.navbar-brand {
+		color: white !important;
+		padding-left: 5vw !important;
+		font-size: 2rem !important;
+	}
+	nav {
+		padding-top: .5vh !important;
+		padding-bottom: 7vh !important;
+	}
 }
 
 @media all and (min-width: 992px) {
@@ -79,6 +88,9 @@ body {
 		display: none;
 	}
 
+	.navbar-brand {
+		color: #0d6efd !important;
+	}
 }
 
 .prevent-select, .prevent-select * {
