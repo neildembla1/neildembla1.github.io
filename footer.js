@@ -3,7 +3,7 @@ fetch('footer.html')
 	.then(text => {
 		let oldElem = document.querySelector("script#replace_with_footer");
 		let newElem = document.createElement("div");
-		newElem.className = "mt-5";
+		newElem.className = "mt-auto";
 		newElem.innerHTML = text;
 		oldElem.parentNode.replaceChild(newElem, oldElem);
 	});

@@ -16,7 +16,7 @@ body {
 
 @media screen and (max-width: 992px) {
 	.navbar-toggler {
-		zoom: 200%;
+		zoom: 100%;
 	}
 	nav {
 		height: 6.5vh;
