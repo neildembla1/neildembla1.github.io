@@ -93,6 +93,10 @@ body {
 	color: lightgray !important;
 }
 
+.list-group-item {
+	border: none !important;
+}
+
 .prevent-select, .prevent-select * {
 	-webkit-user-select: none;
 		/* Safari */
