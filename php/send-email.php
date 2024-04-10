@@ -34,7 +34,7 @@ echo '
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="light-bg-small">
 	<script id="replace_with_navbar" src="/js/nav.js"></script>
 
 	<div class="container p-5">
