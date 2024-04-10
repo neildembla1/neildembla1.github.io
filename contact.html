@@ -20,9 +20,64 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
+
+	<script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 <body>
 	<script id="replace_with_navbar" src="/js/nav.js"></script>
+
+	<!-- <form method="post" action="https://api.web3forms.com/submit">
+		<div class="container mt-5">
+			<div class="form-group">
+				<input type="hidden" name="access_key" value="1e27105a-c31a-4c09-865b-f9cc194b9da2">
+
+				<label for="nameInput">Your name (required)</label>
+				<input name="Name" type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+			</div>
+			<div class="form-group">
+				<label for="emailInput">Your email (required)</label>
+				<input name="email" type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter your email" required>
+			</div>
+			<div class="form-group">
+				<label for="subjectInput">Subject</label>
+				<input name="subject" type="text" class="form-control" id="subjectInput" aria-describedby="subjectHelp">
+			</div>
+			<div class="form-group">
+				<label for="textareaInput">Your message</label>
+				<textarea name="message" id="textareaInput" rows="3" class="form-control"></textarea>
+			</div>
+			<br>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form> -->
+
+	<h1 class="display-3 fw-bold text-center mt-5">CONTACT US</h1>
+
+	<form method="post" action="https://formspree.io/f/xbjnpayr">
+		<div class="container mt-4">
+			<div class="form-group">
+				<label for="nameInput">Your name (required)</label>
+				<input name="name" type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+			</div>
+			<div class="form-group">
+				<label for="emailInput">Your email (required)</label>
+				<input name="email" type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter your email" required>
+				<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+			</div>
+			<div class="form-group">
+				<label for="subjectInput">Subject</label>
+				<input name="subject" type="text" class="form-control" id="subjectInput" aria-describedby="subjectHelp">
+			</div>
+			<div class="form-group">
+				<label for="textareaInput">Your message</label>
+				<textarea name="message" id="textareaInput" rows="3" class="form-control"></textarea>
+			</div>
+			<br>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
 
 	<script id="replace_with_footer" src="/js/footer.js"></script>
 </body>

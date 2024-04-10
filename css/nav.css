@@ -80,3 +80,7 @@
 	top: 20px;
 	transform: rotate(0deg);
 }
+
+.navbar {
+	z-index: 1000;
+}
