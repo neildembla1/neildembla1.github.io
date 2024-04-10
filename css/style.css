@@ -40,7 +40,7 @@ body {
 	.light-bg-small {
 		background-color: #F8F9FA !important;
 	}
-}
+} 
 
 @media all and (min-width: 992px) {
 	.navbar .dropdown-menu-end {
