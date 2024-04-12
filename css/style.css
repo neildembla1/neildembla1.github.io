@@ -43,6 +43,14 @@ body {
 	.image-988 img {
 		width: 98vw !important;
 	}
+	.event-image {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	.event-text {
+		margin-left: 3vw !important;
+		margin-right: 3vw !important;
+	}
 } 
 
 @media all and (min-width: 992px) {
@@ -96,6 +104,11 @@ body {
 	.image-988 img {
 		width: 60% !important;
 	}
+
+	.event-text {
+		margin-left: 6vw !important;
+		margin-right: 3vw !important;
+	}
 }
 
 .navbar .nav-item .nav-link {
@@ -126,4 +139,8 @@ body {
 
 .image-988 {
 	margin-top: 10vh;
+}
+
+.event-image {
+	width: 80%;
 }
