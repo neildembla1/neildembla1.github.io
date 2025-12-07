@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title> Events | SCIAPA.org </title>
+	<title> Events </title>
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="icon" href="/assets/IAPA_Logo.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -11,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="IAPA, South Carolina, SCIAPA, indo, indian, psychiatric, psychiatry, carolina">
 	<meta name="author" content="Neil Dembla">
-	
+
 	<script src="/js/script.js" defer></script>
 
 	<!-- Bootstrap -->
@@ -21,30 +22,94 @@
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
 </head>
+
 <body class="light-bg-small">
 	<script id="replace_with_navbar" src="/js/nav.js"></script>
 
 	<main>
-		<div class="container mt-5 bg-light py-3 mb-4">
-			<div class="row">
-				<div class="col-12 align-items-center">
-					<h1 class="display-3 fw-bold text-center">EVENTS</h1>
-					<!-- <p class="lead mt-3 mx-4 text-secondary">Updated: April 2024</p> -->
-					
-					<hr class="w-75 mx-auto border border-dark">
+		<div class="container">
+			<div class="page-header">
+				<h1 class="display-2 fw-bold">EVENTS & SYMPOSIUMS</h1>
+			</div>
 
-					<div class="event-text container">
-						<p class="lead fw-bold mx-4">11 April, 2024</p>
-						<p class="lead mt-3 mx-4">The first meeting of SCIAPA was held on the 11th of April 2024 in Downtown Greenville.</p>
+			<!-- Toggle Switch -->
+			<div class="toggle-container mb-5">
+				<div class="toggle-switch">
+					<button class="toggle-btn active" id="toggle-events" onclick="switchView('events')">
+						Events
+					</button>
+					<button class="toggle-btn" id="toggle-symposiums" onclick="switchView('symposiums')">
+						Symposiums
+					</button>
+				</div>
+			</div>
+
+			<!-- Events Section -->
+			<div id="events-section">
+				<div class="content-card">
+					<div class="content-section">
+						<div class="event-text">
+							<h2 class="h3 mb-3">April 11, 2024</h2>
+							<p class="lead mb-4">The first meeting of SCIAPA was held on the 11th of April 2024 in Downtown
+								Greenville.
+							</p>
+						</div>
+						<div class="text-center">
+							<img src="/assets/events/04-11-2024-1.jpg" class="event-image" alt="SCIAPA First Meeting - April 2024">
+						</div>
 					</div>
-					<div class="container text-center">
-						<img src="/assets/Event1 Image.jpg" class="event-image mt-3">
+				</div>
+
+				<div class="content-card">
+					<div class="content-section">
+						<div class="event-text">
+							<h2 class="h3 mb-3">December 4, 2024</h2>
+							<p class="lead mb-4">The second meeting was held in Columbia, SC on December 4, 2024.</p>
+						</div>
+						<div class="text-center">
+							<img src="/assets/events/12-04-2024-1.jpg" class="event-image"
+								alt="SCIAPA Second Meeting - December 2024">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Symposiums Section -->
+			<div id="symposiums-section" style="display: none;">
+				<div class="gallery-grid">
+					<div class="gallery-item">
+						<img src="/assets/symposiums/09-29-2024-1.jpg" alt="Symposium - September 29, 2024" class="gallery-image">
+					</div>
+					<div class="gallery-item">
+						<img src="/assets/symposiums/12-07-2025-1.jpg" alt="Symposium - December 7, 2025" class="gallery-image">
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	
+
+	<script>
+		function switchView(view) {
+			const eventsSection = document.getElementById('events-section');
+			const symposiumsSection = document.getElementById('symposiums-section');
+			const eventsBtn = document.getElementById('toggle-events');
+			const symposiumsBtn = document.getElementById('toggle-symposiums');
+
+			if (view === 'events') {
+				eventsSection.style.display = 'block';
+				symposiumsSection.style.display = 'none';
+				eventsBtn.classList.add('active');
+				symposiumsBtn.classList.remove('active');
+			} else {
+				eventsSection.style.display = 'none';
+				symposiumsSection.style.display = 'block';
+				eventsBtn.classList.remove('active');
+				symposiumsBtn.classList.add('active');
+			}
+		}
+	</script>
+
 	<script id="replace_with_footer" src="/js/footer.js"></script>
 </body>
+
 </html>

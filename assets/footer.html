@@ -1,24 +1,32 @@
 <script src="https://kit.fontawesome.com/1bba239c66.js" crossorigin="anonymous"></script>
-<footer class="text-center text-lg-start mt-auto footer-expand-lg sticky-bottom" style="background-color: #0d6efd">
-	<div class="container d-flex justify-content-center py-5">
-		<!-- <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-			<i class="fa-brands fa-facebook"></i>
-		</button>
-		<button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-			<i class="fa-brands fa-youtube"></i>
-		</button>
-		<button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-			<i class="fa-brands fa-instagram"></i>
-		</button>
-		<button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-			<i class="fa-brands fa-twitter"></i>
-		</button> -->
+<footer class="text-center text-lg-start mt-auto footer-expand-lg sticky-bottom" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+				<h5 class="text-uppercase text-white fw-bold mb-3">South Carolina Indo American Psychiatric Association</h5>
+				<p class="text-white-50 mb-0">
+					Serving the mental health needs of the Indian community in South Carolina through collaboration, education, and advocacy.
+				</p>
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<h5 class="text-uppercase text-white fw-bold mb-3">Quick Links</h5>
+				<ul class="list-unstyled">
+					<li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Home</a></li>
+					<li class="mb-2"><a href="/mission-goals" class="text-white-50 text-decoration-none">Mission & Goals</a></li>
+					<li class="mb-2"><a href="/events" class="text-white-50 text-decoration-none">Events</a></li>
+					<li class="mb-2"><a href="/contact" class="text-white-50 text-decoration-none">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
 	<!-- Copyright -->
-	<div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-		<!-- © 2024 Copyright: 
-		Neil Dembla -->
-		Maintained by Neil Dembla
+	<div class="text-center text-white p-4" style="background-color: rgba(0, 0, 0, 0.25); border-top: 1px solid rgba(255, 255, 255, 0.1);">
+		<p class="mb-0">
+			&copy; <span id="current-year"></span> SCIAPA. All rights reserved. | Maintained by Neil Dembla
+		</p>
 	</div>
 </footer>
+<script>
+	document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
